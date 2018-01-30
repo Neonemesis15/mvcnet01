@@ -1,0 +1,66 @@
+﻿@model Salas_AppMvc06.Models.Movimiento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movimiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CtaOrigen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CtaOrigen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CtaDestino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CtaDestino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodTipoMovimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodTipoMovimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Codigo}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
